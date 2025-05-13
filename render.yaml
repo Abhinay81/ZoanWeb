@@ -1,7 +1,7 @@
 services:
   - type: web
     name: zoan-backend
-    env: java
+    runtime: java
     buildCommand: ./mvnw clean package -DskipTests
     startCommand: java -jar target/*.jar
     plan: free
@@ -11,4 +11,4 @@ services:
       - key: SPRING_DATASOURCE_USERNAME
         value: root
       - key: SPRING_DATASOURCE_PASSWORD
-        value: frBsGHOGGrJictdIXvKHsMXZgUOWjGUY
+        value: frBsGH0GGrJictdIXvKHsMXZgU0WjGUY
