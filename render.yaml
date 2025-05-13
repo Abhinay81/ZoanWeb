@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: zoan-backend
+    env: java
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/*.jar
+    plan: free
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:mysql://interchange.proxy.rlwy.net:15057/railway
+      - key: SPRING_DATASOURCE_USERNAME
+        value: root
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: frBsGHOGGrJictdIXvKHsMXZgUOWjGUY
